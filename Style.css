@@ -1,0 +1,82 @@
+.btn-success {
+    padding: 5px 25px;
+    background-color: #21bf73
+}
+
+.backgroundStyle{
+    /* background-color:#2a2725;
+    color: yellow;
+    font-size: large; */
+    background-image: url("https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+}
+
+#headstyle{
+    background-color: #3d6d80;
+    color: white;
+    font-family: Garamond, serif;
+    font-size: 20px;
+
+}
+#bodystyle{
+    background-color: #8ab6d6;
+    
+    color:#2a2725;
+    font-family: Garamond, serif;
+    font-size: 20px;
+
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    font-size: 20px;
+}
+
+/* Hide the default radio button */
+.container input {
+
+opacity: 0;
+
+}
+
+/* custom radio button */
+.check {
+position:absolute;
+top: 0;
+left: 0;
+height: 30px;
+width: 30px;
+background-color: lightgray;
+border-radius: 40%;
+margin-left: 42%;
+border: 1px solid black;
+}
+
+.container:hover input ~ .check {
+background-color: gray;
+}
+
+.container input:checked ~ .check {
+background-color: green;
+}
+
+.check:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.container input:checked ~ .check:after {
+display: block;
+}
+
+.container .check:after {
+top: 6px;
+left: 7px;
+width: 16px;
+height: 16px;
+border-radius: 20%;
+background: whitesmoke;
+}
