@@ -15,7 +15,7 @@
     background-color: #3d6d80;
     color: white;
     font-family: Garamond, serif;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 #bodystyle{
@@ -25,6 +25,12 @@
     font-family: Garamond, serif;
     font-size: 20px;
 
+}
+
+.tablestyle{
+    color:#2a2725;
+    font-family: Garamond, serif;
+    font-size: 20px;
 }
 
 
@@ -59,7 +65,7 @@ background-color: gray;
 }
 
 .container input:checked ~ .check {
-background-color: green;
+background-color:rgb(7, 141, 230);
 }
 
 .check:after {
@@ -80,3 +86,4 @@ height: 16px;
 border-radius: 20%;
 background: whitesmoke;
 }
+

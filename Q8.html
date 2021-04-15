@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="Style.css">
 <head>
     <title>
-        Question 2
+        Question 8
     </title>
     <style>
     </style>
@@ -13,16 +13,16 @@
 
 <body onload="loadAns()" class="backgroundStyle">
 
-            <form action="Q3.html" onsubmit="checkans()"> 
+            <form action="Q9.html" onsubmit="checkans()"> 
                 <div class="card text-center" style="margin: 15%;">
                     <div class="card-header " id="headstyle">
-                        <b>Q2: Which team won IPL 2018 Title<br></b>
+                        <b>Q8: Which team won IPL 2011 Title<br></b>
                     </div>
                     <div class="card-body" id="bodystyle" >
-                        <label class="container"><b>KKR</b><input type="radio" id="ans1" name="q2" value="KKR"><span class="check"></span></label><br>
-                        <label class="container"><b>CSK</b><input type="radio" id="ans2" name="q2" value="CSK"><span class="check"></span></label><br>
-                        <label class="container"><b>MI's</b><input type="radio" id="ans3" name="q2" value="MI's"><span class="check"></span></label><br>
-                        <label class="container"><b>RCB</b><input type="radio" id="ans4" name="q2" value="RCB"><span class="check"></span></label><br>
+                        <label class="container"><b>RR's</b><input type="radio" id="ans1" name="q8" value="RR's"><span class="check"></span></label><br>
+                        <label class="container"><b>KXP</b><input type="radio" id="ans2" name="q8" value="KXP"><span class="check"></span></label><br>
+                        <label class="container"><b>CSK</b><input type="radio" id="ans3" name="q8" value="CSK"><span class="check"></span></label><br>
+                        <label class="container"><b>SRH</b><input type="radio" id="ans4" name="q8" value="SRH"><span class="check"></span></label><br>
                         <input class="btn btn-primary" type="submit" name="submit"> 
                     </div>
                   </div>
@@ -31,13 +31,13 @@
         var ans="CSK";
 
         function loadans(){
-            localStorage.setItem("question2",ans)
+            localStorage.setItem("question8",ans)
         }
         var point=0
         
         function validate()
         {
-            var radioque = document.getElementsByName("q2");
+            var radioque = document.getElementsByName("q8");
             var j=0;
             var len=radioque.length;
             for(;j<len;j++)
@@ -51,7 +51,7 @@
         function checkans(){
             var count=parseInt(localStorage.getItem("score"));
             var markedans=validate()
-            localStorage.setItem("yourAnswer2",markedans)
+            localStorage.setItem("yourAnswer8",markedans)
             if(ans==markedans){
                 count++;
                 count=count.toString();
